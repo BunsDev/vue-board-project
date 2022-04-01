@@ -1,7 +1,7 @@
 <template>
 <div class="wrap_inner">
+                      접속유저 : {{ userId }} | {{ sortType }}
     <main id="container">
-                접속유저 : {{ userId }} {{ sortType }}: {{ boardSelectByLvl }}
 <section class="board_section">
     <header>
         <div class="board_head">
@@ -12,10 +12,11 @@
                 </div>
         </header>
 <article>
+
         <div class="wrap_button">
             <div class="button_group">
-              <button type="button" class="off">전체글</button>
-              <button type="button" class="on">공지</button>
+    <label><input type="radio" v-bind:value="sortByOrder" v-model="sortType"> 계층순으로 정렬 </label>
+    <label><input type="radio" v-bind:value="sortByRegDt" v-model="sortType"> 생성순으로 정렬 </label>
             </div>
         </div>
 <table class="board_list">
@@ -79,7 +80,6 @@ export default {
       },
       sortByOrder: '게시글 계층 정렬',
       sortByRegDt: '게시글 최신순 정렬',
-      sortByNormal: '게시글 정렬',
       userId: 'test_id',
       boardList: [
         { brdTitle: '테스트 글제목', brdWriter: 'foo', brdRegDt: '2022-03-31', brdHit: '3', brdReCnt: '0' },
@@ -104,14 +104,6 @@ export default {
 }
 </script>
 <style scope>
-html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, a, em, img, strong, b, u, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, embed, figure, figcaption, footer, header, nav, section, summary, audio, video, button {
-    /* margin: 0; */
-    /* padding: 0; */
-    /* border: 0; */
-    /* vertical-align: baseline; */
-    /* background: transparent; */
-    /* font-style: normal; */
-}
 .wrap_inner {
   position: relative;
   width: 1450px;
