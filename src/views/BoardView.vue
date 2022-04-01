@@ -1,4 +1,6 @@
 <template>
+<div>
+</div>
 </template>
 <script>
 export default {
@@ -23,15 +25,6 @@ export default {
     padding-bottom: 11px;
     border-bottom: 1px solid #eee;
 }
-
-html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, a, em, img, strong, b, u, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, embed, figure, figcaption, footer, header, nav, section, summary, audio, video, button {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    vertical-align: baseline;
-    background: transparent;
-    font-style: normal;
-}
 사용자 에이전트 스타일시트
 div {
     display: block;
@@ -54,15 +47,6 @@ body, button, input, select, table, textarea {
 .gallview_contents {
     line-height: 22px;
 }
-html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, a, em, img, strong, b, u, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, embed, figure, figcaption, footer, header, nav, section, summary, audio, video, button {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    vertical-align: baseline;
-    background: transparent;
-    font-style: normal;
-}
-
 사용자 에이전트 스타일시트
 div {
     display: block;
